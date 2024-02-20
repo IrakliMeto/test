@@ -1,0 +1,49 @@
+.home-main-header {
+  padding-top: 24px;
+  background: #edf1fe;
+
+  .logo-box {
+    a {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin-left: 12px;
+        color: #000;
+        font-family: 'Stolzl';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.48px;
+
+        span {
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+}
+
+.header-btn {
+  color: #2a446e;
+  font-family: 'Stolzl';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(42, 68, 110, 0.1);
+  padding: 14px 18px;
+
+  &:hover {
+    color: #2a446e;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  img {
+    margin-right: 12px;
+  }
+}

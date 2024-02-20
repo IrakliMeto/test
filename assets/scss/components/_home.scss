@@ -1,0 +1,479 @@
+.home-section-1 {
+    background: #EDF1FE;
+
+    .container {
+        background-image: url(../img/hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        padding-bottom: 56px;
+        padding-top: 56px;
+
+        @include HDLaptop {
+            background-image: none;
+        }
+    }
+
+    h1 {
+        color: #212121;
+        font-family: 'Stolzl';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 133.333%;
+        letter-spacing: -0.96px;
+        text-align: center;
+        margin-bottom: 16px;
+
+        @include HDLaptop {
+            font-size: 32px;
+        }
+
+        @include mobile {
+            font-size: 28px;
+        }
+
+        @include bigMobile {
+            font-size: 20px;
+        }
+
+        span {
+            color: rgba(33, 33, 33, 0.60);
+        }
+    }
+
+   & > .container > p {
+        color: #424242;
+        text-align: center;
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 588px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    .btn-box {
+        margin-bottom: 24px;
+    }
+}
+
+.home-section-2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .title {
+        color: rgba(66, 66, 66, 0.60);
+        text-align: center;
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    .small-title {
+        color: #212121;
+        text-align: center;
+        font-family: 'Stolzl';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal; 
+        letter-spacing: -0.72px;
+        margin-bottom: 32px;
+
+        @include mobile {
+            font-size: 28px;
+            margin-bottom: 28px;
+        }
+    }
+
+    .show-more {
+        all: unset;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #000;
+        font-family: 'Stolzl';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        text-decoration-line: underline;
+
+        &:hover {
+            color: #2A446E;
+            transition: 0.3s;
+        }
+    }
+}
+
+.home-section-3 {
+    padding-top: 52px;
+    padding-bottom: 80px;
+    background: rgba(33, 33, 33, 0.05);
+
+    .title {
+        color: #212121;
+        text-align: center;
+        font-family: 'Stolzl';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.72px;
+        margin-bottom: 64px;
+
+        @include mobile {
+            font-size: 32px;
+        }
+    }
+
+    .uk-grid {
+        margin-left: -177px;
+
+        & > * {
+            padding-left: 177px;
+            position: relative;
+
+            &.uk-grid-margin {
+                @include HDLaptop {
+                    margin-top: 52px;
+                }
+            }
+    
+            &:first-child {
+                .line {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .line {
+        position: absolute;
+        width: 271px;
+        top: 8px;
+
+        @include HDLaptop {
+            display: none;
+        }
+    }
+
+    .line-1 {
+        left: -16px;
+    }
+
+    .line-2 {
+        right: -194px;
+    }
+
+    .title-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+
+        @include HDLaptop {
+            margin-bottom: 20px;
+        }
+
+        svg {
+            min-width: 29px;
+            min-height: 29px;
+            margin-right: 12px;
+        }
+    }
+
+    .small-title {
+        color: var(--Style, #1D2026);
+        font-family: 'Lato';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.48px;
+    }
+
+    p {
+        color: rgba(29, 32, 38, 0.60);
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.32px;
+
+        @include HDLaptop {
+            max-width: 282px;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+    }
+}
+
+.home-section-4 {
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    .container {
+        max-width: 585px;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    p {
+        color: #212121;
+        font-family: 'Stolzl';
+        font-size: 36px;
+        line-height: normal;
+        letter-spacing: -0.72px;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        color: rgba(33, 33, 33, 0.60);
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+    }
+
+    .uk-grid {
+        margin-left: -116px;
+
+        & > * {
+            padding-left: 116px;
+        }
+    }
+}
+  
+.section-5 {
+    .title {
+        color: #212121;
+        text-align: center;
+        font-family: 'Stolzl';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 134%; 
+        letter-spacing: -0.96px;
+        margin-bottom: 40px;
+
+        @include mobile {
+            font-size: 32px;
+        }
+    }
+}
+
+.btn-box {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Stolzl';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    padding: 20px 40px;
+    border-radius: 4px;
+    background: #2A446E;
+
+    @include mobile {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    &:hover {
+        color: #FFF;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    img {
+        margin-right: 12px;
+        margin-top: -2px;
+    }
+}
+
+.review-grid {
+    margin-left: -24px;
+    margin-bottom: 52px;
+
+    & > * {
+        padding-left: 24px;
+
+        &.uk-grid-margin {
+            margin-top: 24px;
+        }
+    }
+}
+
+.review-card { 
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.10);
+    background: #FFF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        color: var(--Style, #212121);
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px; 
+    }
+
+    .review-card-top {
+        min-height: 246px;
+        padding-bottom: 32px;
+
+        @include tablet {
+            min-height: auto;
+        }
+
+        svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.review-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid rgba(33, 33, 33, 0.10);
+
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.review-card-bottom-left {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        margin-bottom: 16px;
+    }
+
+    figure {
+        margin-right: 12px;
+
+        img {
+            width: 40px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            max-width: 40px;
+            max-height: 40px;
+        }
+    }
+
+    h3 {
+        color: #212121;
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+        margin-bottom: 4px;
+    }
+
+    time {
+        display: block;
+        color: rgba(33, 33, 33, 0.60);
+        font-family: 'Stolzl';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.24px;
+    }
+}
+
+.hero-bottom {
+    margin-bottom: 36px;
+    max-width: 368px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    p {
+        color: #212121;
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+    }
+
+    svg {
+        margin-right: 6px; 
+        width: 23px;
+        height: 23px;
+        min-width: 23px;
+        min-height: 23px;
+    }
+}
+
+.hero-top {
+    max-width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    & > .uk-flex {
+        @include mobile {
+            flex-direction: column;
+        }
+
+        & > * {
+            @include mobile {
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    span {
+        color: rgba(33, 33, 33, 0.60);
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+    }
+
+    p {
+        color: #212121;
+        font-family: 'Stolzl';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+    }
+}

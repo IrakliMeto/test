@@ -1,0 +1,17 @@
+// Screens
+$breakpoint-small: 640px !default;
+$breakpoint-medium: 959px !default;
+$breakpoint-large: 1199px !default;
+$breakpoint-xlarge: 1440px !default;
+
+$breakpoint-xsmall-max: ($breakpoint-small - 1) !default;
+$breakpoint-small-max: ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max: ($breakpoint-large - 1) !default;
+$breakpoint-large-max: ($breakpoint-xlarge - 1) !default;
+
+// // Global
+// $global-color: #000;
+
+// // BG Colors
+// $global-background: red;
+// $global-muted-background: green;
