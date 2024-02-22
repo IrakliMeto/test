@@ -136,7 +136,7 @@
                 fill="#FBAD16"
               />
             </svg>
-            <span class='coupon-13k'>(13k ratings)</span>
+            <span class="coupon-13k">(13k ratings)</span>
           </div>
         </div>
 
@@ -296,26 +296,25 @@
       </div>
     </footer>
 
-     <!-- Modal -->
-     <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img src="./assets/img/modal-amazon.png" alt="" />
-        <p class="modal-text">
-          Would you like Capital One to try all <span> amazon </span> codes at checkout in one
-          click?
-        </p>
-        <div class="">
-          <a
-            class="btn"
-            href="https://chromewebstore.google.com/detail/capital-one-shopping-add/nenlahapcbofgnanklpelkaejcehkggg?hl=en-US"
-          >
-            <img src="./assets/img/btn-icon.svg" alt="" />
-            Add To Chrome - It's Free!
-          </a>
-        </div>
+    <!-- Modal -->
+    <div id="modalBG" class="modalBG"></div>
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="./assets/img/modal-amazon.png" alt="" />
+      <p class="modal-text">
+        Would you like Capital One to try all <span> amazon </span> codes at checkout in one click?
+      </p>
+      <div class="">
+        <a
+          class="btn"
+          href="https://chromewebstore.google.com/detail/capital-one-shopping-add/nenlahapcbofgnanklpelkaejcehkggg?hl=en-US"
+        >
+          <img src="./assets/img/btn-icon.svg" alt="" />
+          Add To Chrome - It's Free!
+        </a>
+      </div>
 
-        <div class="modal-footer">
+      <div class="modal-footer">
         <div class="modal-box">
           <div class="uk-flex uk-flex-middle">
             <svg
@@ -379,33 +378,41 @@
               fill="#FBAD16"
             />
           </svg>
-          <span class='modal-ratings'>(13k ratings)</span>
+          <span class="modal-ratings">(13k ratings)</span>
         </div>
         <p class="coupon2-users modal-users">8,000,000+ Users</p>
       </div>
     </div>
+
+    <script>
+      var modal = document.getElementById('modal');
+      var modalBG = document.getElementById('modalBG');
+
+      function openModal() {
+        modal.style.display = 'flex';
+        modalBG.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        modal.classList.remove('close-animation');
+      }
+
+      function closeModal() {
+        modal.classList.add('close-animation');
+
+        setTimeout(function () {
+          modal.style.display = 'none';
+          modalBG.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          modal.classList.remove('close-animation');
+        }, 300);
+      }
+
+      function windowOnClick(event) {
+        if (event.target === modalBG) {
+          closeModal();
+        }
+      }
+
+      modalBG.addEventListener('click', windowOnClick);
+    </script>
   </body>
-
-  <script>
-    // Function to open the modal
-    function openModal() {
-      document.getElementById('myModal').style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    }
-
-    // Function to close the modal
-    function closeModal() {
-      document.getElementById('myModal').style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-
-    // Event listener for the "Get Coupon Now!" button
-    document.getElementById('getCouponButton').addEventListener('click', function () {
-      // Replace this line with your logic to generate the coupon code
-      var couponCode = 'YOUR_COUPON_CODE';
-
-      // Call the function to open the modal with the generated coupon code
-      openModal(couponCode);
-    });
-  </script>
 </html>

@@ -467,22 +467,16 @@
           modalBG.style.display = 'none';
           document.body.style.overflow = 'auto';
           modal.classList.remove('close-animation');
-        }, 500);
+        }, 300);
       }
 
-      document.getElementById('getCouponButton').addEventListener('click', function () {
-        var couponCode = 'YOUR_COUPON_CODE';
-        openModal(couponCode);
-      });
-
       function windowOnClick(event) {
-        console.log('jemala');
         if (event.target === modalBG) {
           closeModal();
         }
       }
 
-      document.body.addEventListener('click', windowOnClick);
+      modalBG.addEventListener('click', windowOnClick);
     </script>
   </body>
 </html>
