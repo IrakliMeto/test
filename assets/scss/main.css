@@ -2028,7 +2028,6 @@ body {
 .modal {
   background-color: #fefefe;
   padding: 64px 0 0;
-  border: 1px solid #888;
   max-width: 560px;
   width: 100%;
   flex-direction: column;
